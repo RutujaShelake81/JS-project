@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#topbar {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+
+#leftmenu {
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#leftmenu>a {
+    text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+#logo span {
+    font-weight: 800;
+}
+
+#logo>a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#search_bar {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+#search_bar>i {
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+
+#search-box {
+    width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+
+#rightmenu {
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#rightmenu>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#cart {
+    position: relative;
+    margin-right: 32px;
+}
+
+#cart>a {
+    text-decoration: none;
+    color: black;
+}
+
+#cart i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#cart_count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+
+/*carousel section  */
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+#demo {
+    padding: 7.4rem 9rem 0 9rem;
+}
+
+/* Cloth section */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+#main_section {
+    padding: 0px 80px 100px 130px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+}
+#edyoda-projects-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+}
+#main_section_2{
+    padding: 0px 80px 100px 130px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+}
+.div_style {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    width: 17%;
+    min-width: 200px;
+    height: auto;
+    margin: 30px 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+
+}
+.div_style > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+/* .div_style:hover{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+} */
+.img_style {
+    height: 70%;
+    width: 100%;
+}
+.name_tag{
+    margin-top: 323px;
+    display: flex;
+    position: absolute;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 25, 25);
+    font-family: "Montserrat", sans-serif;
+}
+
+.price {
+    margin-top:9px;
+    margin-left: 10px;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #009688;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
+.brand {
+    margin-top: 69px;
+    margin-left: 10px;
+    display: flex;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+    font-family: "Montserrat", sans-serif;
+}
+.heading_1{
+    display: flex;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 100px;
+    margin-left: 50px;
+    color: rgb(27, 25, 25);
+}
+.heading_2{
+    display: flex;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: -25px;
+    margin-left: 50px;
+    color: rgb(27, 25, 25);
+}
+
+/*  Footer Css  */
+    footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex !important;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+      font-family: 'Open Sans', sans-serif;
+}
+  footer > div:first-of-type {
+    padding-left: 0;
+}
+
+footer > div {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+  
+ .footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    #demo {
+        padding: 8.4rem 8rem 0 9rem;
+    }
+   
+    #main_section {
+    padding: 0px; 
+    margin:0px;
+    
+        box-sizing: border-box;
+    }
+    #main_section_2{
+    padding: 0px; 
+    margin: 0px;
+    box-sizing: border-box;
+
+    }
+
+     .div_style{
+        min-width: 230px;
+        margin-bottom:0px;
+        left: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_style {
+        height: 55%;
+        width: 100%;
+    }
+    .name_tag{
+        margin-top: 120px;
+        
+    }
+    
+    .price {
+        margin-top:2px;
+        margin-bottom: 40px;
+    }
+    
+    .brand {
+        margin-top: 65px;
+        
+    }
+    .heading_1{
+        margin-left: 10px;
+    }
+    .heading_2{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #search_bar{
+        display: none;
+    }
+
+      footer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4% 8%;
+    
+    }
+    footer > div {
+        padding-left:60px;
+        padding-right: 8px;
+    }
+    /* .fot-div{
+        height: 200px;
+        width: 500px;
+    } */
+
+}

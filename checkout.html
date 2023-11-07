@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="shop.css">
+    <!-- <link rel="stylesheet" href="checkout.css" /> -->
+
+    <title>checkout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+   
+   
+   <style>
+     #main {
+      
+      width: 80%;
+      margin-left: 134px;
+      margin-right: 10px;
+      position: relative;
+
+
+    }
+    .left_div {
+      /* border: 1px solid black; */
+      width: 600px;
+      height: 141.46px;
+      display: flex;
+      box-sizing: border-box;
+      box-shadow: 0 2px 5px #ccc;
+      border-radius: 5px;
+      background-color: white;
+      max-width: 600px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .div3 {
+
+      width: 96px;
+      height: 111px;
+    }
+
+    .img1 {
+      width: 96px;
+      height: 111px;
+    }
+
+    .div4 {
+
+      width: 400px;
+      height: 111px;
+      margin-left: 20px;
+    }
+
+    .h_tag {
+      margin-top: 0px;
+      font-weight: 600;
+      margin: 0;
+      margin-bottom: 4px;
+      font-size: 18px;
+      font-family: sans-serif;
+    }
+
+    .p_tag {
+      font-weight: 400;
+      font-family: sans-serif;
+      font-size: 17px;
+      color: #000000;
+      font-style: normal;
+      margin-top: 7px;
+    }
+
+    .p1_tag {
+      font-weight: 400;
+      font-family: sans-serif;
+      font-size: 17px;
+      color: #000000;
+      font-style: normal;
+      margin-top: -11px;
+
+    }
+
+    .right_div {
+      width: 470px;
+      height: 200px;
+      right: 0;
+      top: 0;
+      position: absolute;
+     padding: 10px;
+
+      /* height: fit-content; */
+
+      box-sizing: border-box;
+      box-shadow: 0 2px 5px #ccc;
+      border-radius: 5px;
+
+
+    }
+    .h1_tag1{
+      font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    }
+    .para{
+      font-size: 16px;
+      font-family: sans-serif;
+      font-weight: 400;
+      color: #000000;
+      font-style:normal ;
+    }
+    .span1{
+      font-weight: 700;
+      font-size: 25px;
+      font-family: sans-serif;
+      position: absolute;
+      top: 67px;
+      left: 100px;
+    }
+  .swap{
+    height: 56px;
+    width: 170px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      right: 47.2%;
+      color: #fff;
+      padding: 10px 20px;
+      letter-spacing: 2px;
+      background-color: #009688;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px){
+    .left_div {
+      /* border: 1px solid black; */
+      width: 400px;
+      height: 141.46px;
+      left: 0px;
+      bottom: 10px;
+      overflow-x: hidden;
+    }
+    .right_div {
+      width: 200px;
+      height: 200px;
+      right: -25px;
+      top: 70px;
+     padding: 10px;
+     margin-left: 30px;
+     overflow-x: hidden;
+
+     
+
+
+    }
+    .h1_tag1{
+      font-size: 18px;
+  
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    }
+    .para{
+      font-size: 15px;
+      
+    }
+   
+
+  
+  .swap{
+    height: 45px;
+    width: 150px;
+    font-size: 14px;
+}
+.span1{
+      font-weight: 400;
+      font-size: 18px;
+      left: 100px;
+    }
+  }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="leftmenu">
+                <div id="logo"><a href="/index.html">
+                        <span>Shop</span>
+                        lane
+                    </a></div>
+                <a href="#clothing-section">Clothing</a>
+                <a href="#accessory-section">Accessories</a>
+            </div>
+            <div id="search_bar">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories">
+            </div>
+            <div id="rightmenu">
+                <div id="cart">
+                    <p id="cart_count">5</p>
+                    <a href="checkout.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+                </div>
+                <img src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg">
+            </div>
+        </nav>
+    </header>
+    <section id="main-section">
+        <h1 id="main-heading">Checkout</h1>
+        <h3 class="section-heading">Total Items: <span id="item-count">5</span></h3>
+        <div id="main"></div>
+<!-- 
+        <div id="content-wrapper">
+            <div id="card-list"> -->
+               
+                    <!-- <div><img class="checkout-product-img"
+                            src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg">
+                    </div>
+                    <div>
+                        <h4>Men Navy Blue Solid Sweatshirt</h4>
+                        <p>x4</p>
+                        <p><span>Amount: Rs </span><span>10396</span></p>
+                    </div>
+                </div>
+                <div class="checkout-card">
+                    <div><img class="checkout-product-img"
+                            src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/2/23/dc05b5e5-aa82-493e-bf0b-0c309baf21021550920383101-1.jpg">
+                    </div>
+                    <div>
+                        <h4>Unisex Black &amp; Green Reflex 2.0 Smart Band</h4>
+                        <p>x2</p>
+                        <p><span>Amount: Rs </span><span>3998</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="section-heading">Total Amount</h3>
+                <p>Amount: Rs<span id="total-amount">14394</span></p> -->
+                <!-- <a href="orderconfirm.html">
+                <button id="btn-place-order">Place Order</button>
+                </a>
+            </div> -->
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">Men Clothing</a>
+            <a href="/" class="footer-link">Women Clothing</a>
+            <a href="/" class="footer-link">Men Accessories</a>
+            <a href="/" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Zara</a>
+            <a href="/" class="footer-link">Pantaloons</a>
+            <a href="/" class="footer-link">Levis</a>
+            <a href="/" class="footer-link">UCB</a>
+            <a href="/" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building 101</p>
+            <p href="/" class="footer-link">Central Avenue</p>
+            <p href="/" class="footer-link">LA - 902722</p>
+            <p href="/" class="footer-link">United States</p>
+        </div>
+    </footer>
+    <script src="checkout.js"></script>
+</body>
+
+</html>

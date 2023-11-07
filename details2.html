@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="details.css" />
+    <link rel="stylesheet" href="shop.css">
+
+    <title>Details</title>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <nav id="topbar">
+          <div id="leftmenu">
+              <div id="logo"><a href="/index.html">
+                      <span>Shop</span>
+                      lane
+                  </a></div>
+              <a href="#clothing-section">Clothing</a>
+              <a href="#accessory-section">Accessories</a>
+          </div>
+          <div id="search_bar">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories">
+          </div>
+          <div id="rightmenu">
+              <div id="cart">
+                <p id="cart_count" value="-">0</p>
+                  <a href="./checkout.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+              </div>
+              <img src="https://test-hosting-8f9bf.web.app/assets/avatar.jpg">
+          </div>
+      </nav>
+  </header>
+    <section id="main_section">
+      <img id="edyoda-projects-logo" src="https://i.imgur.com/OKAY6Fl.png" alt="EdYoda Projects Logo">
+
+      <button style="margin-top: 676px;" id="event">Add to Cart</button>
+    </section>  <footer>
+      <div>
+          <p class="footer-heading">Online Store</p>
+          <a href="/" class="footer-link">Men Clothing</a>
+          <a href="/" class="footer-link">Women Clothing</a>
+          <a href="/" class="footer-link">Men Accessories</a>
+          <a href="/" class="footer-link">Women Accessories</a>
+      </div>
+      <div>
+          <p class="footer-heading">Helpful Links</p>
+          <a href="/" class="footer-link">Home</a>
+          <a href="/" class="footer-link">About</a>
+          <a href="/" class="footer-link">Contact</a>
+      </div>
+      <div>
+          <p class="footer-heading">Partners</p>
+          <a href="/" class="footer-link">Zara</a>
+          <a href="/" class="footer-link">Pantaloons</a>
+          <a href="/" class="footer-link">Levis</a>
+          <a href="/" class="footer-link">UCB</a>
+          <a href="/" class="footer-link">+ Many More</a>
+      </div>
+      <div>
+          <p class="footer-heading">Address</p>
+          <p href="/" class="footer-link">Building 101</p>
+          <p href="/" class="footer-link">Central Avenue</p>
+          <p href="/" class="footer-link">LA - 902722</p>
+          <p href="/" class="footer-link">United States</p>
+      </div>
+  </footer>
+
+    <script>
+      var productData2=[{
+  "id": "2",
+  "name": "Men Black MAMGP T7 Sweat Sporty Jacket",
+  "preview": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2060340/2017/9/14/11505387708574-Puma-Men-Black-Solid-Sporty-Jacket-371505387708496-1.jpg",
+  "photos": [
+    "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2060340/2017/9/14/11505387708574-Puma-Men-Black-Solid-Sporty-Jacket-371505387708496-1.jpg",
+    "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2060340/2017/9/14/11505387708559-Puma-Men-Black-Solid-Sporty-Jacket-371505387708496-2.jpg",
+    "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2060340/2017/9/14/11505387708542-Puma-Men-Black-Solid-Sporty-Jacket-371505387708496-3.jpg"
+  ],
+  "description": "Black solid sporty jacket, has a mock collar, 3 pockets, zip closure, long sleeves, straight hem, unlined lining",
+  "size": [
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "isAccessory": false,
+  "brand": "Puma",
+  "price": 7999
+}
+]
+var section_Id = document.getElementById("main_section");
+
+var divOne = document.createElement("div");
+
+divOne.className = "img_div";
+
+section_Id.appendChild(divOne);
+
+var leftImg = document.createElement("img");
+divOne.appendChild(leftImg);
+
+var divTwo = document.createElement("div");
+divTwo.className = "text_div";
+section_Id.appendChild(divTwo);
+
+var h1 = document.createElement("h1");
+divTwo.appendChild(h1);
+
+var h2 = document.createElement("h2");
+divTwo.appendChild(h2);
+
+var h4 = document.createElement("h4");
+divTwo.appendChild(h4);
+
+var h3 = document.createElement("h3");
+divTwo.appendChild(h3);
+
+var p = document.createElement("p");
+divTwo.appendChild(p);
+
+var button = document.createElement("button");
+for(var i=0;i<productData2.length;i++){
+ for(j in productData2[i]){
+  console.log(j)
+  if (j == "preview") {
+    leftImg.src = productData2[i][j];
+  }
+  if (j == "name") {
+    h1.innerHTML = productData2[i][j];
+  }
+  if (j == "brand") {
+    h4.innerHTML += productData2[i][j];
+  }
+  if (j == "price") {
+    h4.innerHTML += `<br><br> Price: Rs <span>${productData2[i][j]}</span> `;
+  }
+  if (j == "description") {
+    h2.innerHTML += "Description";
+    p.innerHTML = `<br> ${productData2[i][j]}`;
+  }
+  
+    if (j == "review") {
+      h2.innerHTML += `<br><br><br>  ${productData2[i][j]} `;
+      h2.className = "review";
+    }
+
+  if (j == "photos") {
+    for (var k= 0; k < productData2[i][j].length; k++) {
+      var preImages = document.createElement("img");
+      preImages.className = "previewImg";
+      divTwo.appendChild(preImages);
+      var a = productData2[i][j][k];
+      preImages.src = a;
+    }
+  }
+}
+}
+
+
+var z= document.getElementsByClassName("previewImg");
+for (var i = 0; i < z.length; i++) {
+  if (i == 0) {
+    z[i].classList.add("active");
+  }
+  z[i].onclick = function () {
+    var w = this.src;
+    leftImg.src = w;
+    var x = document.getElementsByClassName("active");
+    console.log(x.length);
+    if (x.length != 0) {
+      x[0].className = "";
+    }
+    this.className = "active";
+  };
+}
+
+function increment(numberOfIncrementCalls){
+    numberOfIncrementCalls++;
+    return numberOfIncrementCalls;
+    }
+n = document.getElementById("cart_count");
+o = document.getElementById("event");
+numOfIncr = 0;
+o.addEventListener("click",function(){
+numOfIncr = increment(numOfIncr);
+var insert = numOfIncr.toString();
+n.innerHTML = insert;
+});
+    </script>
+  </body>
+</html>
